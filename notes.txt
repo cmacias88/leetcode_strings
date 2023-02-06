@@ -1,0 +1,21 @@
+Problem #1:
+
+positions_of_large_groups:
+    Appropriate Data Set: 
+
+
+Problem #2:
+
+valid_anagram:
+    Appropriate Data Set: Dictionary
+        - keep count of the times a letter occurs in a string 
+    
+    If the key-value pairs of the two strings are identical or the contents of the 
+    dictionary, then the strings are anagrams of each other. 
+
+    Alternative Solutions:
+        If the sorted function is allowed: 
+            - a list is created from both strings and then alphabeticallly ordered, so 
+                you can compare if the two are identical.
+
+
