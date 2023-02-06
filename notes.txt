@@ -3,7 +3,6 @@ Problem #1:
 positions_of_large_groups:
     Appropriate Data Set: 
 
-
 Problem #2:
 
 valid_anagram:
@@ -13,9 +12,17 @@ valid_anagram:
     If the key-value pairs of the two strings are identical or the contents of the 
     dictionary, then the strings are anagrams of each other. 
 
+    Runtime Complexity:
+        O(n^3)
+        - You are iterating through a for loop once for each string to create a dictionary for each
+            and then conducting a final for loop while comparing if the contents of both dictionaries 
+            are equal. 
+
     Alternative Solutions:
-        If the sorted function is allowed: 
+        If sorted() is allowed: 
             - a list is created from both strings and then alphabeticallly ordered, so 
                 you can compare if the two are identical.
-
-
+         Runtime Complexity: O(nlog(n) + mlog(m))
+            - You are sorting through each string, so the n and m denote the length of each string 
+            respectively while the sorted() function is O(n log n) runtime. 
+        
