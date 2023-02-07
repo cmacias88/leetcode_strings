@@ -38,7 +38,8 @@ longest_palindromic_substring
 
     In order to solve this problem, you are meant to save a variable for the longest palindrome with 
     an empty string. Then, you nest two for loops and check each substring you create to see if it's a 
-    palindrome. 
+    palindrome. You will continously compare this to the longest palindrome value and if the length is
+    greater, the value is overwritten. 
     
     You exhaust all possible substrings by:
         - the first for loop being meant to exhaust all possible substrings by altering the start point (i)
