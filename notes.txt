@@ -53,3 +53,17 @@ longest_palindromic_substring
         resulting in O(n^3). 
  
 -------------------------------------
+
+Problem #4:
+
+longest-substring-without-repeating-characters
+    Appropriate Data Set: Set
+
+    Similar to the problem above, you exhaust all options for a substring created from the original string
+    using a nested for loop. However, converting the substring into a set prevents duplicates within the substring. 
+
+    Runtime Complexity:
+        O(n^3)
+        - You are iterating through a for loop once for each string to create a dictionary for each
+            and then conducting a final for loop while comparing if the contents of both dictionaries 
+            are equal.

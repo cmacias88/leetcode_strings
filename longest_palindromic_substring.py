@@ -24,14 +24,14 @@
 
 def longestPalindrome(s):    
     while len(s) >= 1 and len(s) <= 1000:
-                longest_palindrome = ''
-                string_length = len(s)
-                for i in range(string_length):
-                    for j in range((i + 1), (string_length + 1)):
-                        palindrome = s[i:j]
-                        if palindrome == palindrome[::-1]:
-                            if len(palindrome) > len(longest_palindrome):
-                                longest_palindrome = palindrome
-                return longest_palindrome
+        longest_palindrome = ''
+        string_length = len(s)
+        for i in range(string_length):
+            for j in range((i + 1), (string_length + 1)):
+                palindrome = s[i:j]
+                if palindrome == palindrome[::-1]:
+                    if len(palindrome) > len(longest_palindrome):
+                        longest_palindrome = palindrome
+        return longest_palindrome
 
     # Solution Runtime: O(n^3)
