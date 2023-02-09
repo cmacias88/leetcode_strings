@@ -1,7 +1,15 @@
 Problem #1:
 
 positions_of_large_groups:
-    Appropriate Data Set: 
+    By creating two indices, one being one more than the other, you are able to compare one pair
+    at a time. If the difference in the two indices is greater than 3 after checking if those 
+    characters in those two spots are the same, then the indices are added into a list as 
+    coordinates.
+
+    Runtime Complexity:
+        O(n)
+        - Only iterating through the string once as the two if conditionals and checks are 
+            happening at the same time. 
 
 -------------------------------------
 
@@ -67,3 +75,10 @@ longest-substring-without-repeating-characters
         - You are iterating through a for loop once for each string to create a dictionary for each
             and then conducting a final for loop while comparing if the contents of both dictionaries 
             are equal.
+
+
+-------------------------------------
+
+Problem #5: 
+
+

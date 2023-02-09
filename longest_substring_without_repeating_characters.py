@@ -39,6 +39,3 @@ def lengthOfLongestSubstring(s):
         return len(longest_substring)
 
     # Solution Runtime: O(n^3)
-
-
-
