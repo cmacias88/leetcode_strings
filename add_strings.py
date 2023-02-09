@@ -24,3 +24,44 @@
     #     num1 = "456", num2 = "77"
     # Output: 
     #     num1 = "456", num2 = "77"
+
+
+def addStrings(num1, num2):
+    if len(num1) >= 1 and len(num2) <= 10^4:
+        sum_digits = []
+
+        first_num_add = ''
+        second_num_add = ''
+
+        if len(num1) > len(num2):
+            first_num_add, second_num_add = num1, num2
+        else: 
+            first_num_add, second_num_add = num2, num1
+
+        first_num_add = first_num_add[::-1]
+        second_num_add = second_num_add[::-1]
+
+        carry = 0
+        i = 0
+
+        while i < len(first_num_add):
+            if i < len(second_num_add):
+                s = int(second_num_add[i]) + int(first_num_add[i]) + carry
+            else:
+                s = int(first_num_add[i]) + carry
+
+            if s >= 10:
+                s -= 10
+                carry = 1
+            else:
+                carry = 0
+
+            sum_digits.append(s)
+            i += 1
+
+        if carry:
+            sum_digits.append(carry)
+
+        return "".join(map(str, sum_digits[::-1]))
+
+    # Solution Runtime: O(n)

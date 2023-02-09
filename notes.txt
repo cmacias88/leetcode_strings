@@ -81,4 +81,17 @@ longest-substring-without-repeating-characters
 
 Problem #5: 
 
+add_strings
+
+    For this problem, the solution involves thinking of the traditional form of addition, using carry overs. 
+    Because you work from the last place to the first logically, the problem calls for reversing the strings
+    in a list. The carry-over is represented as a variable and only becomes one if the sum of the digits at 
+    a given index is greater than 10. These are saved into a list and then returned at the end by iterating 
+    through the list and returning a concatenated string of it. 
+
+    Runtime Complexity:
+        O(n^2)
+        - After the synchronous conditional check of digits based on place from both numbers, the return 
+            statement iterates through the list with the stored sums and returns a reversed string. 
+
 
