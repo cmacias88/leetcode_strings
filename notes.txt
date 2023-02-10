@@ -119,6 +119,28 @@ two_sum
         Runtime Complexity: O(n)
             - Only one for loop is requires and the lookup in a dictionary is O(1). 
 
+-------------------------------------
         
+Problem #7:
+
+defanging_ip_address
+
+    First, generate a list containing all the characters for a new string. Then iterate through the characters
+        in the given address and append the replacement only when the character is a '.'. Otherwise, append the 
+        character as is. At the end, return the new string as a whole using the join() method.  
+
+    Runtime Complexity:
+        O(n^2)
+        - Requires iterating through the string to check if a character is a '.' and if so replacing it and 
+            appending that new character to the created list. The final join requires another loop through the 
+            new list in order to generate a new string.
+    
+    Alternative Solutions:
+        If replace() is allowed: 
+            - the replace method replaces a character in a string as it searches through its entirety.
+         Runtime Complexity: O(n)
+            - You look through all the characters in the string and replace them syncronously. 
+
+
 
 
