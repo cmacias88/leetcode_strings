@@ -5,9 +5,8 @@
 
 # Constraints:
 
-# 1 <= num1.length, num2.length <= 104
+# 1 <= num1.length, num2.length <= 10^4
 # num1 and num2 consist of only digits.
-# 
 
 # Test Cases:
  

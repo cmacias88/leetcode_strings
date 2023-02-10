@@ -95,3 +95,30 @@ add_strings
             statement iterates through the list with the stored sums and returns a reversed string. 
 
 
+-------------------------------------
+
+Problem #6:
+
+two_sum
+
+    The solution involves merely looping through the list once and creating a variable containing the sum of 
+        a number and the proceeding number. Because there is only one viable answer, return the first match 
+        with the pair's sum and the target. 
+
+    Runtime Complexity:
+        O(n)
+        - Generate an empty list to contain all possible matches. The first for loop looks for all possible
+            matches within the given nums list and then the final return statement pops the first entry
+            from the match list.
+
+    Alternative Solutions:
+        You can also use a dictionary: 
+            - a dictionary stores every number in the given list as a key with its index as the value.
+            - looking up the difference of a given number and checking if it exists as a key in the 
+                dictionary will generate if there is a match.
+        Runtime Complexity: O(n)
+            - Only one for loop is requires and the lookup in a dictionary is O(1). 
+
+        
+
+

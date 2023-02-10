@@ -5,7 +5,7 @@
 
 # Constraints:
 
-# 1 <= s.length, t.length <= 5 * 104
+# 1 <= s.length, t.length <= 5 * 10^4
 # s and t consist of lowercase English letters.
 
 # Test Cases:
@@ -46,5 +46,10 @@ def isAnagram(s, t):
 
     # Solution Runtime: O(n^3)
 
-    # Alternative Single-Line Solution:
-        # return sorted(s.strip()) == sorted(t.strip())
+# ---------------------------------
+
+# Alternative Single-Line Solution:
+def isAnagram(s, t):
+    return sorted(s.strip()) == sorted(t.strip())
+
+    # Solution Runtime: O(nlog(n) + mlog(m))
